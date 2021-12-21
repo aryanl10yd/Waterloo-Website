@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Waterloo Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navigation">
+        <ul>
+          <li class="list">
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </span>
+              <span class="text">Settings</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="camera-outline"></ion-icon>
+              </span>
+              <span class="text">Photo</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+              </span>
+              <span class="text">Message</span>
+            </a>
+          </li>
+          <li class="list active" id="profile">
+            <a href="Profile.html">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="text">Profile</span>
+            </a>
+          </li>
+          <li class="list" id="home">
+            <a href="index.html">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+
+      <div class="page-1">
+          <div class="display-2" id="heading-text-1">About</div>
+          <hr class="hr-1">
+          <div class="display-5 col-md-3" id="heading-text-2">I enjoy coding because of its simplicity and errors, as it has this bittersweet taste to it.</div>
+          <i class="fab fa-html5" id="html5-icon"></i>
+          <i class="fab fa-css3-alt" id="css3-icon"></i>
+      </div>
+      <div class="page-2">
+          <div class="display-2" id="heading-text-3">Python</div>
+          <hr class="hr-2">
+          <div class="display-5 col-md-3" id="heading-text-4">Python is a platform that I am well diversed in, and can be a generator for creativity is used correctly. this means that by using Python, you could make many different projects such as GUI, Jupyter AI Chatbot, AI Machine Learning, etc. it is valued by many engineerists and programmers alike.</div>
+          <i class="fab fa-python" id="python-icon"></i>
+      </div>
+
+      <footer id="footer">
+        <div class="container-fluid bg-light text-dark mt-5">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-muted text-center">Copyright © Aryan's Website</p>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-slack"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+      <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+          list.forEach((item) =>
+          item.classList.remove('active'));
+          this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click', activeLink))
+      </script>
+
+<!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- Font Awesome -->
+<script src="script.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<!-- Bootstrap 4.0.0 -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
